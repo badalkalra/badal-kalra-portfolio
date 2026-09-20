@@ -1,47 +1,266 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Badal Kalra - People Experience Specialist. Employee experience, people operations, process improvement, client handling and practical automation.">
-<title>Badal Kalra | People Experience Specialist</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--night:#070b12;--night2:#0d1420;--paper:#f7f9fc;--ink:#101722;--muted:#667386;--blue:#2e86ff;--blue2:#79b0ff;--line:#dfe6ef;--white:#fff;--shadow:0 24px 80px rgba(12,22,36,.12);--r:26px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1180px,92vw);margin:auto}.top{color:#eff5ff;background:radial-gradient(circle at 78% 20%,rgba(46,134,255,.18),transparent 28%),linear-gradient(135deg,var(--night),#0b1220 68%,#101b2c);overflow:hidden}.nav{display:flex;align-items:center;justify-content:space-between;padding:26px 0}.brand{font-family:'Space Grotesk';font-weight:700;letter-spacing:-.02em;font-size:18px}.navlinks{display:flex;gap:26px}.navlinks a{font-size:14px;color:#afbdd0;text-decoration:none}.navlinks a:hover{color:#fff}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:68px;align-items:center;padding:90px 0 110px}.pill{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#a9caff}.pill:before{content:"";width:34px;height:1px;background:var(--blue)}h1{font-family:'Space Grotesk';font-size:clamp(56px,8vw,102px);line-height:.9;letter-spacing:-.06em;margin:18px 0 22px}.hero-sub{font-size:21px;max-width:680px;color:#b8c5d8}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:800;transition:transform .2s ease,box-shadow .2s ease}.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:#fff;box-shadow:0 12px 28px rgba(46,134,255,.28)}.secondary{border:1px solid rgba(255,255,255,.18);color:#fff}.tertiary{border:1px solid rgba(255,255,255,.12);color:#aebbd0}.hero-panel{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:34px;padding:28px;backdrop-filter:blur(12px);box-shadow:0 28px 90px rgba(0,0,0,.22)}.monogram{width:88px;height:88px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(135deg,#2e86ff,#173f8b);font-family:'Space Grotesk';font-size:34px;font-weight:700}.hero-panel h3{font-family:'Space Grotesk';font-size:27px;line-height:1.05;margin:20px 0 6px}.hero-panel .role{color:#aebbd0}.hero-list{margin-top:28px;border-top:1px solid rgba(255,255,255,.1)}.hero-list div{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:14px}.hero-list span{color:#93a3ba}.hero-list b{color:#f5f8fd;font-weight:700;text-align:right}.proof{margin-top:22px;font-size:12px;color:#7fb4ff;text-transform:uppercase;letter-spacing:.13em;font-weight:800}
-.section{padding:100px 0}.section.dark{background:var(--night);color:#eef4ff}.section.lightblue{background:#edf4fc}.head{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:end;margin-bottom:42px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:800}.section h2{font-family:'Space Grotesk';font-size:clamp(38px,5.5vw,62px);line-height:1;letter-spacing:-.05em;margin:10px 0}.head p{max-width:570px;margin:0;color:var(--muted);font-size:17px}.dark .head p{color:#9eacbf}.story{display:grid;grid-template-columns:1fr .8fr;gap:64px}.story p{font-size:18px;color:#505e71}.dark .story p{color:#aeb9ca}.quote{align-self:start;border-left:3px solid var(--blue);padding:4px 0 4px 24px;font-family:'Space Grotesk';font-size:31px;line-height:1.18}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:var(--shadow)}.card .tiny{font-size:12px;color:var(--blue);text-transform:uppercase;letter-spacing:.14em;font-weight:800}.card h3{font-family:'Space Grotesk';font-size:26px;line-height:1.08;margin:20px 0 10px}.card p{color:#607084;margin:0}.work-card{min-height:360px;display:flex;flex-direction:column}.work-card .tag{font-size:12px;font-weight:800;color:#78b0ff;letter-spacing:.12em}.work-card h3{color:#fff}.work-card p{color:#aeb9c9}.work-card .flow{margin-top:auto;padding-top:22px;color:#dbe5f2;font-size:14px;border-top:1px solid rgba(255,255,255,.1)}.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.job{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}.jobtop{display:flex;justify-content:space-between;gap:20px}.job h3{font-family:'Space Grotesk';font-size:24px;margin:0 0 4px}.role{color:#536175;font-weight:700}.date{font-size:13px;color:#8894a5;white-space:nowrap}.job p{color:#627083;margin:15px 0}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:12px;color:#596779;background:#fbfcff}.recognition{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.feature-award{background:linear-gradient(145deg,#0d1521,#121e2e);border-radius:28px;padding:30px;color:#fff;min-height:390px}.feature-award .label{color:#7eb5ff;font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}.feature-award h3{font-family:'Space Grotesk';font-size:36px;line-height:1.02;margin:24px 0 12px}.feature-award p{color:#b0bed0;font-size:17px}.award-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.award{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.award b{font-family:'Space Grotesk';font-size:18px;line-height:1.08;display:block}.award span{display:block;font-size:13px;color:#728094;margin-top:7px}.learn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.learn{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px}.learn .issuer{font-size:12px;color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.1em}.learn h3{font-family:'Space Grotesk';font-size:20px;line-height:1.15;margin:13px 0 7px}.learn p{margin:0;color:#687588;font-size:14px}.contact{border-radius:32px;background:linear-gradient(135deg,#09101a,#122238);color:#fff;padding:48px;position:relative;overflow:hidden}.contact:after{content:"";position:absolute;width:420px;height:420px;right:-180px;bottom:-220px;border-radius:50%;background:radial-gradient(circle,rgba(46,134,255,.34),transparent 68%)}.contact>*{position:relative;z-index:1}.contact h2{max-width:690px}.contact p{font-size:18px;color:#aebbd0;max-width:670px}.contact-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.footer{display:flex;justify-content:space-between;gap:20px;padding:28px 0 54px;color:#8792a2;font-size:13px}.note{margin-top:26px;color:#7a8799;font-size:12px}.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.show{opacity:1;transform:none}.course-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.course-chip{background:#e9f1ff;color:#245799;border:1px solid #cadcf8;border-radius:999px;padding:8px 11px;font-size:12px;font-weight:700}
-@media(max-width:950px){.hero,.story,.recognition,.head{grid-template-columns:1fr}.cards,.work-grid,.learn-grid{grid-template-columns:1fr}.award-grid{grid-template-columns:1fr}.hero{padding-top:55px}.navlinks{display:none}}
-@media(max-width:560px){.section{padding:74px 0}.hero{padding-bottom:80px}.hero-actions,.contact-actions{align-items:stretch;flex-direction:column}.btn{width:100%}.jobtop{flex-direction:column}.date{white-space:normal}.contact{padding:30px}.footer{flex-direction:column}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Badal Kalra — HR Professional | People Experience | Process Improvement</title>
+  <meta name="description" content="Badal Kalra — HR Professional focused on People Experience, HR Operations and Process Improvement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="top">
-  <div class="wrap nav"><div class="brand">BADAL KALRA</div><nav class="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Work</a><a href="#recognition">Recognition</a><a href="#learning">Learning</a><a href="#contact">Contact</a></nav></div>
-  <div class="wrap hero">
-    <div class="reveal"><div class="pill">People Experience Specialist</div><h1>Badal Kalra</h1><p class="hero-sub">I solve people problems with <strong>process, data & technology.</strong> I bring People Experience, People Operations, client handling and process improvement together to make work simpler, faster and more human.</p><div class="hero-actions"><a class="btn primary" href="#work">Explore My Work</a><a class="btn secondary" href="mailto:contact@badalkalra.com?subject=Let%27s%20Connect%20-%20Badal%20Kalra">Let's Connect</a><a class="btn tertiary" href="./Badal-Kalra-Resume.pdf" download="Badal-Kalra-Resume.pdf">Download Resume</a></div></div>
-    <aside class="hero-panel reveal"><div class="monogram">BK</div><h3>People-first. Process-minded.</h3><div class="role">Associate People Experience Specialist · Optum</div><div class="hero-list"><div><span>Focus</span><b>Employee Experience</b></div><div><span>Strength</span><b>Process Improvement</b></div><div><span>Experience</span><b>Client & Employee Operations</b></div><div><span>Toolkit</span><b>Excel · Dashboards · Microsoft</b></div><div><span>Mindset</span><b>Automation & AI literacy</b></div></div><div class="proof">Recognized at Optum & Wipro</div></aside>
+  <div class="page-wipe" id="pageWipe" aria-hidden="true">
+  <div class="wipe-panel"></div>
+  <div class="wipe-panel"></div>
+  <div class="wipe-panel"></div>
+  <div class="wipe-content"><span class="wipe-mark">BK</span><span class="wipe-label">BADAL KALRA</span></div>
+</div>
+  <div class="scroll-line" id="scrollLine" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-orb" id="cursorOrb" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand magnetic" href="#home" aria-label="Badal Kalra home"><span class="bk-mark" aria-hidden="true">BK</span><span>Badal Kalra</span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button class="theme-toggle magnetic" id="themeToggle" type="button" aria-label="Toggle light and dark mode">☾</button>
+      <a class="outline-pill magnetic" href="#contact">Let's Connect <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow reveal-fast">PEOPLE <span>×</span> PROCESS <span>×</span> PROGRESS</div>
+        <div class="hero-kicker reveal-fast">CURRENTLY @ OPTUM · ASSOCIATE PEOPLE EXPERIENCE SPECIALIST</div>
+        <h1 class="hero-title-large"><span class="hero-line"><span>Creating better</span></span><span class="hero-line"><span>employee experiences</span></span><span class="hero-line accent"><span>through people, process,</span></span><span class="hero-line"><span>and continuous improvement.</span></span></h1>
+        <p class="hero-subcopy reveal-up">HR Professional | People Experience | Process Improvement</p>
+        <p class="hero-body reveal-up">I work across employee support, HR operations, service workflows, reporting and practical process improvement—with a growing focus on AI-enabled ways of working.</p>
+        <div class="hero-actions reveal-up">
+          <a class="primary-btn magnetic" href="#work">Explore My Work <span>↓</span></a>
+          <a class="secondary-btn magnetic" href="./resume.pdf" download="Badal-Kalra-Resume.pdf">Download Résumé <span>↓</span></a>
+        </div>
+        <div class="hero-footer reveal-up"><span>Gurugram, Haryana, India</span><span class="dot-sep">·</span><span class="open-inline"><i></i> Open to opportunities</span></div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-shell" data-speed="0.08">
+          <img src="assets/badal-portrait.jpeg" alt="Badal Kalra outdoors by a lakeside">
+          <div class="hero-image-shade"></div>
+          <div class="hero-portrait-tag">PEOPLE EXPERIENCE<br>HR OPERATIONS<br>PROCESS IMPROVEMENT</div>
+          <div class="hero-vertical">BADAL KALRA · 2026</div>
+        </div>
+        <div class="hero-note">“People first.<br>Process driven.<br>Always listening.”</div>
+      </div>
+    </section>
+
+    <section class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track"><span>PEOPLE FIRST</span><span>PROCESS DRIVEN</span><span>ALWAYS LISTENING</span><span>BUILDING BETTER</span><span>PEOPLE FIRST</span><span>PROCESS DRIVEN</span><span>ALWAYS LISTENING</span><span>BUILDING BETTER</span></div>
+    </section>
+
+    <section id="work" class="section work-section reveal-section">
+      <div class="section-topline"><span>01 / SELECTED WORK</span><span class="mono-note">THINK · TEST · IMPROVE</span></div>
+      <div class="section-intro-row">
+        <h2>Work built around <em>real</em> problems.</h2>
+        <p>A few projects that show how I approach employee experience, process improvement and modern HR workflows.</p>
+      </div>
+
+      <article class="case-card featured-case hover-lift" data-case="dashboard">
+        <a href="case-study-dashboard.html" class="case-media case-dashboard magnetic-area" aria-label="Open AI-assisted Birthday and Anniversary Dashboard case study">
+          <div class="browser-window">
+            <div class="browser-bar"><span></span><span></span><span></span><b>AI-assisted HR dashboard</b><small>● private workspace</small></div>
+            <div class="dashboard-canvas">
+              <div class="dash-title">Good morning, Badal.</div>
+              <div class="dash-cards">
+                <div class="dash-card"><span>Upcoming birthdays</span><strong>12</strong></div>
+                <div class="dash-card"><span>Work anniversaries</span><strong>08</strong></div>
+                <div class="dash-card highlight"><span>Email draft</span><strong>Ready</strong></div>
+              </div>
+              <div class="dash-bottom"><span>Review → edit → controlled send</span><span>Copilot</span></div>
+            </div>
+          </div>
+          <div class="case-overlay"><span>OPEN CASE STUDY ↗</span></div>
+        </a>
+        <div class="case-info">
+          <div class="case-meta"><span>01 · AI × HR OPERATIONS</span><span>2026</span></div>
+          <h3>AI-Assisted Birthday &amp; Anniversary Dashboard</h3>
+          <p>From manual Excel tracking to a private Copilot-assisted workflow that prepares personalized greeting content and supports controlled sending after review.</p>
+          <div class="case-result"><strong>30 min → 10 min</strong><span>approx. effort per employee</span></div>
+          <div class="case-tags"><span>Microsoft Copilot</span><span>Excel</span><span>AI-assisted workflow</span></div>
+          <a class="case-link" href="case-study-dashboard.html">View case study <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="case-card split-case hover-lift" data-case="assignment">
+        <a href="case-study-auto-assignment.html" class="case-media case-assignment magnetic-area" aria-label="Open Automatic Work Assignment case study">
+          <div class="assignment-flow"><span>CASE ARRIVES</span><b>↓</b><span>AUTO ASSIGN</span><b>↓</b><span>LIVE NOTIFY</span><b>↓</b><span>RESOLVE</span></div>
+          <div class="case-overlay"><span>OPEN CASE STUDY ↗</span></div>
+        </a>
+        <div class="case-info">
+          <div class="case-meta"><span>02 · PROCESS IMPROVEMENT</span><span>OPTUM</span></div>
+          <h3>Automatic Work Assignment</h3>
+          <p>Contributed to testing automated HR case assignment and suggested associate-side improvements such as live assignment notifications.</p>
+          <div class="case-tags"><span>Testing</span><span>Workflow</span><span>Associate perspective</span></div>
+          <a class="case-link" href="case-study-auto-assignment.html">View case study <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="case-card split-case hover-lift" data-case="jira">
+        <a href="case-study-jira.html" class="case-media case-jira magnetic-area" aria-label="Open JIRA work tracking dashboard case study">
+          <div class="jira-frame">
+            <div class="jira-head"><span>JIRA / DAILY WORK TRACKING</span><span>WIPRO</span></div>
+            <div class="jira-row"><span>Ticket progress</span><b>Visible</b></div>
+            <div class="jira-row warning"><span>Pending workflow</span><b>Review</b></div>
+            <div class="jira-row alert"><span>Overdue workflow</span><b>Escalate</b></div>
+            <div class="jira-foot">Weekly management reporting</div>
+          </div>
+          <div class="case-overlay"><span>OPEN CASE STUDY ↗</span></div>
+        </a>
+        <div class="case-info">
+          <div class="case-meta"><span>03 · REPORTING &amp; VISIBILITY</span><span>WIPRO</span></div>
+          <h3>JIRA Work-Tracking Dashboard</h3>
+          <p>A daily ticket-tracking dashboard used to surface progress, identify pending and overdue workflows, and support weekly management reporting.</p>
+          <div class="case-tags"><span>JIRA</span><span>Reporting</span><span>Operational visibility</span></div>
+          <a class="case-link" href="case-study-jira.html">View case study <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="section about-section reveal-section">
+      <div class="section-topline"><span>02 / ABOUT</span><span class="mono-note">A LITTLE ABOUT ME</span></div>
+      <div class="about-grid">
+        <div class="about-heading"><h2>Curious about what can be <em>better.</em></h2><span class="hand-note">Always learning.<br>Always sharing.</span></div>
+        <div class="about-copy"><p>I’m a dedicated HR professional who is keen to learn, share knowledge and contribute ideas that make work better. My experience spans client support, HR operations, employee experience, reporting and process improvement.</p><p>I enjoy finding practical ways to make work clearer, smoother and more useful for the people doing it.</p><p class="about-signature">Building trust through clarity, support, and empathy.</p></div>
+      </div>
+      <div class="capability-grid-wide">
+        <article><span>01</span><h3>People Experience</h3><p>Employee inquiries, policy guidance, HR operations and case support.</p></article>
+        <article><span>02</span><h3>Process Improvement</h3><p>Spotting friction, testing changes and making workflows easier to use.</p></article>
+        <article><span>03</span><h3>AI &amp; Automation</h3><p>Using AI as a supporting capability for smarter, repeatable workflows.</p></article>
+        <article><span>04</span><h3>Reporting &amp; Visibility</h3><p>Turning operational information into something teams can understand and act on.</p></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section experience-section reveal-section">
+      <div class="section-topline"><span>03 / EXPERIENCE</span><span class="mono-note">THE JOURNEY SO FAR</span></div>
+      <div class="experience-heading"><h2>From client support to <em>People Experience.</em></h2><p>A continuous shift toward employee experience, process thinking and better ways of working.</p></div>
+      <div class="experience-list">
+        <article class="experience-row current">
+          <div class="experience-year">OCT '24 — NOW</div>
+          <div class="experience-company"><strong>Optum</strong><span>UnitedHealth Group</span></div>
+          <div class="experience-role"><b>Associate People Experience Specialist</b><p>Supports US-based employees across employee inquiries, policy guidance, HR operations and case resolution using ServiceNow and Oracle Cloud HRMS.</p><div class="tag-row"><span>People Experience</span><span>HR Operations</span><span>ServiceNow</span><span>Oracle Cloud HRMS</span></div></div>
+        </article>
+        <article class="experience-row">
+          <div class="experience-year">AUG '21 — OCT '24</div>
+          <div class="experience-company"><strong>Wipro</strong><span>Client Services</span></div>
+          <div class="experience-role"><b>Client Specialist</b><p>Provided end-to-end client support, handled high-priority inquiries and escalations, and prepared reporting views to track ticket progress, pending work and overdue workflows.</p><div class="tag-row"><span>Client Management</span><span>Problem Solving</span><span>JIRA</span><span>Reporting</span></div></div>
+        </article>
+      </div>
+      <div class="progression"><span>01 <b>Client Support</b></span><i>→</i><span>02 <b>HR Operations</b></span><i>→</i><span>03 <b>People Experience</b></span><i>→</i><span>04 <b>Continuous Improvement</b></span></div>
+    </section>
+
+    <section id="credentials" class="section credentials-section reveal-section">
+      <div class="section-topline"><span>04 / CREDENTIALS</span><span class="mono-note">EDUCATION · RECOGNITION · LEARNING</span></div>
+      <div class="credentials-grid">
+        <div class="credential-column">
+          <h2>Education</h2>
+          <article class="credential-item"><div class="credential-icon">NM</div><div><b>Master of Business Administration</b><span>Human Resources · SVKM's NMIMS</span><small>2026 — Present</small></div></article>
+          <article class="credential-item"><div class="credential-icon">KU</div><div><b>Bachelor of Commerce</b><span>General · Kurukshetra University</span><small>2018 — 2021</small></div></article>
+        </div>
+        <div class="credential-column">
+          <h2>Certifications</h2>
+          <p class="credential-intro">Credential cards are ready for certificate images. When an image is present in the site assets, clicking opens it in a full-screen viewer; otherwise the card opens the corresponding LinkedIn evidence.</p>
+          <div class="credential-card-grid">
+            <button class="credential-card evidence-card" type="button" data-image="assets/credentials/master-microsoft-excel.jpg" data-link="https://www.linkedin.com/in/badalkalra71/details/certifications/" data-title="Master Microsoft Excel">
+              <div class="credential-thumb"><span>EX</span><i>↗</i></div>
+              <div class="credential-card-copy"><b>Master Microsoft Excel</b><span>LinkedIn · Issued Apr 2025</span></div>
+            </button>
+            <button class="credential-card evidence-card" type="button" data-image="assets/credentials/teams-outlook.jpg" data-link="https://www.linkedin.com/in/badalkalra71/details/certifications/" data-title="Using Microsoft Teams and Outlook Together: Maximizing Productivity">
+              <div class="credential-thumb"><span>MS</span><i>↗</i></div>
+              <div class="credential-card-copy"><b>Using Microsoft Teams and Outlook Together: Maximizing Productivity</b><span>LinkedIn · Issued Mar 2025</span></div>
+            </button>
+            <button class="credential-card evidence-card" type="button" data-image="assets/credentials/certified-trainer.jpg" data-link="https://www.linkedin.com/in/badalkalra71/details/certifications/" data-title="Certified Trainer">
+              <div class="credential-thumb"><span>TR</span><i>↗</i></div>
+              <div class="credential-card-copy"><b>Certified Trainer</b><span>Wipro · Issued Aug 2024</span></div>
+            </button>
+          </div>
+          <a class="credential-link" href="https://www.linkedin.com/in/badalkalra71/details/certifications/" target="_blank" rel="noopener noreferrer">View certification evidence on LinkedIn <span>↗</span></a>
+        </div>
+      </div>
+      <div class="recognition-block recognition-scene">
+        <div class="recognition-head recognition-head-animated">
+          <div>
+            <div class="eyebrow">05 / Recognition</div>
+            <h2>Recognition, with the evidence to prove it.</h2>
+          </div>
+          <span>Only awards with images are featured. Other recognitions remain compact and linked.</span>
+        </div>
+
+        <div class="recognition-grid recognition-grid-images recognition-featured-grid">
+          <button class="recognition-card evidence-card award-featured" type="button" data-image="assets/credentials/employee-excellence-aug-2026.jpeg" data-link="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" data-title="Employee Excellence Award · Optum · Aug 2026" data-index="01">
+            <span class="award-index">01</span>
+            <div class="recognition-thumb"><img src="assets/credentials/employee-excellence-aug-2026.jpeg" alt="Optum Employee Excellence Award certificate for August 2026"></div>
+            <div class="recognition-card-copy"><b>Employee Excellence Award</b><span>Optum · Aug 2026</span></div><i>↗</i>
+          </button>
+
+          <button class="recognition-card evidence-card award-featured" type="button" data-image="assets/credentials/employee-excellence-jun-2026.jpeg" data-link="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" data-title="Employee Excellence Award · Optum · Jun 2026" data-index="02">
+            <span class="award-index">02</span>
+            <div class="recognition-thumb"><img src="assets/credentials/employee-excellence-jun-2026.jpeg" alt="Optum Employee Excellence Award certificate for June 2026"></div>
+            <div class="recognition-card-copy"><b>Employee Excellence Award</b><span>Optum · Jun 2026</span></div><i>↗</i>
+          </button>
+
+          <button class="recognition-card evidence-card award-featured" type="button" data-image="assets/credentials/employee-excellence-jul-2025.jpeg" data-link="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" data-title="Employee Excellence Award · Optum · Jul 2025" data-index="03">
+            <span class="award-index">03</span>
+            <div class="recognition-thumb"><img src="assets/credentials/employee-excellence-jul-2025.jpeg" alt="Optum Employee Excellence Award certificate for July 2025"></div>
+            <div class="recognition-card-copy"><b>Employee Excellence Award</b><span>Optum · Jul 2025</span></div><i>↗</i>
+          </button>
+
+          <button class="recognition-card evidence-card award-featured" type="button" data-image="assets/credentials/blaze-award.jpeg" data-link="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" data-title="Blaze Award · Wipro" data-index="04">
+            <span class="award-index">04</span>
+            <div class="recognition-thumb"><img src="assets/credentials/blaze-award.jpeg" alt="Wipro Blaze Award recognition post"></div>
+            <div class="recognition-card-copy"><b>Blaze Award</b><span>Wipro · Aug 2024</span></div><i>↗</i>
+          </button>
+        </div>
+
+        <div class="recognition-secondary">
+          <div class="recognition-secondary-label">Other recognition</div>
+          <a class="recognition-card recognition-link-card award-compact" href="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" target="_blank" rel="noopener noreferrer">
+            <div class="recognition-mark">DZ</div><div class="recognition-card-copy"><b>Dazzle Award</b><span>Wipro · Jul 2023 · View on LinkedIn</span></div><i>↗</i>
+          </a>
+          <a class="recognition-card recognition-link-card award-compact" href="https://www.linkedin.com/in/badalkalra71/details/honors-awards/" target="_blank" rel="noopener noreferrer">
+            <div class="recognition-mark">IL</div><div class="recognition-card-copy"><b>Illuminate Award</b><span>Wipro · 2022 · View on LinkedIn</span></div><i>↗</i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal-section">
+      <div class="contact-topline"><span>05 / CONTACT</span><span class="mono-note">LET'S TALK</span></div>
+      <div class="contact-hero"><h2>Have something<br>in mind?</h2><div class="contact-giant">Let's connect.</div></div>
+      <div class="contact-grid"><div><p>Open to conversations around People Experience, employee support, process improvement and interesting opportunities.</p><a class="contact-email magnetic" href="mailto:contact@badalkalra.com">contact@badalkalra.com ↗</a></div><div class="contact-actions"><a class="primary-btn magnetic" href="mailto:contact@badalkalra.com">Send Email</a><a class="secondary-btn magnetic" href="https://www.linkedin.com/in/badalkalra71" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="secondary-btn magnetic" href="./resume.pdf" download="Badal-Kalra-Resume.pdf">Résumé ↓</a></div></div>
+      <footer class="footer"><span>© 2026 Badal Kalra</span><span>People first. Process driven. Always listening.</span></footer>
+    </section>
+  </main>
+
+
+<div class="evidence-modal" id="evidenceModal" aria-hidden="true">
+  <div class="evidence-backdrop" data-close-evidence></div>
+  <div class="evidence-dialog" role="dialog" aria-modal="true" aria-labelledby="evidenceTitle">
+    <button class="evidence-close" type="button" aria-label="Close" data-close-evidence>×</button>
+    <div class="evidence-media"><img id="evidenceImage" alt="" hidden><div id="evidenceFallback" class="evidence-fallback">LinkedIn evidence<br><small>Certificate image not available in the local site assets.</small></div></div>
+    <div class="evidence-footer"><div><span class="mono-note">EVIDENCE</span><h3 id="evidenceTitle">Credential</h3></div><a id="evidenceLink" class="primary-btn" href="#" target="_blank" rel="noopener noreferrer">Open on LinkedIn ↗</a></div>
   </div>
-</header>
+</div>
 
-<section id="about" class="section"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">01 / About</div><h2>A career shaped by people, service and smarter processes.</h2></div><p>My career has moved from client-facing employee benefits operations at Wipro into People Experience at Optum. The common thread has been ownership: understand the problem, reduce the friction, and leave the process better than I found it.</p></div><div class="story"><div class="reveal"><p>I’ve worked in high-volume employee and client operations, handled critical cases, supported multiple projects, built Excel dashboards, improved SOPs and knowledge content, and automated repetitive workflows.</p><p>That experience has shaped how I work: I care about the employee experience, but I also care about how the system behind that experience works. I’m at my best when I can combine service, analysis and practical process thinking.</p><div class="course-strip"><span class="course-chip">People Experience</span><span class="course-chip">People Operations</span><span class="course-chip">Client Handling</span><span class="course-chip">Process Improvement</span><span class="course-chip">Dashboards</span><span class="course-chip">Automation</span></div></div><div class="quote reveal">“Better processes should make better employee experiences - not add another layer of work.”</div></div></div></section>
-
-<section id="experience" class="section lightblue"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">02 / Experience</div><h2>From benefits operations to People Experience.</h2></div><p>A concise view of the roles where I learned to balance service quality, operational discipline, stakeholders and continuous improvement.</p></div><div class="cards"><article class="job reveal"><div class="jobtop"><div><h3>Optum</h3><div class="role">Associate People Experience Specialist</div></div><div class="date">Current</div></div><p>Employee-facing People Experience work across high-volume operations, critical cases, process improvement, knowledge/SOP updates, mentoring and automation. Recognized for quality and performance.</p><div class="chips"><span class="chip">Employee Experience</span><span class="chip">People Operations</span><span class="chip">Process Improvement</span><span class="chip">Automation</span></div></article><article class="job reveal"><div class="jobtop"><div><h3>Wipro</h3><div class="role">Client Specialist · Benefits Operations</div></div><div class="date">Previous</div></div><p>Front-facing specialist work supporting a portfolio of 18 enterprise clients, handling employee-benefits issues, client communication and recurring PowerPoint reporting, alongside process and automation improvements.</p><div class="chips"><span class="chip">Client Handling</span><span class="chip">Benefits Operations</span><span class="chip">Reporting</span><span class="chip">Stakeholders</span></div></article></div></div></section>
-
-<section id="work" class="section dark"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">03 / Selected Work</div><h2>Real work, told as problems and outcomes.</h2></div><p>These are portfolio-safe versions of the projects you described. Confidential client, employee and system details are intentionally omitted.</p></div><div class="work-grid"><article class="card work-card reveal"><div class="tag">01 · AUTOMATION</div><h3>Birthday & Anniversary Automation</h3><p>Reworked a manual process that required pulling reports, finding upcoming birthdays/anniversaries, preparing individual email slides and distributing them to teams.</p><div class="flow">Report data → automated event check → slide generation → ready-to-send recognition</div></article><article class="card work-card reveal"><div class="tag">02 · KNOWLEDGE EXPERIENCE</div><h3>Redwood SOP & Knowledge Update</h3><p>Took ownership of reviewing SOPs and knowledge articles after a UI update, identifying outdated guidance and helping refresh the content used by associates supporting employees.</p><div class="flow">UI change → identify gaps → update SOPs → improve support experience</div></article><article class="card work-card reveal"><div class="tag">03 · CLIENT OPERATIONS</div><h3>Enterprise Benefits Support</h3><p>Served as a front-facing specialist for 18 clients, owning employee-benefits issues and building weekly/monthly PowerPoint reporting to communicate service and employee-experience insights.</p><div class="flow">Client portfolio → issue ownership → reporting → stakeholder partnership</div></article></div><p class="note">Portfolio note: examples are simplified to protect confidential client, employee and internal-process information.</p></div></section>
-
-<section class="section"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">04 / Impact</div><h2>Proof that sits behind the story.</h2></div><p>Instead of repeating the same metrics across the page, the site uses a few signals where they actually add context.</p></div><div class="cards"><article class="card reveal"><div class="tiny">Service</div><h3>High-volume employee support</h3><p>Handled critical employee and client cases at scale, including days with roughly 50 cases while maintaining service ownership.</p></article><article class="card reveal"><div class="tiny">Recognition</div><h3>Optum performance</h3><p>An Employee Excellence recognition cited 103% utilization, 4.35 CSAT and 45 hours of overtime during a high-volume period.</p></article><article class="card reveal"><div class="tiny">Client scope</div><h3>Enterprise-facing work</h3><p>At Wipro, supported a portfolio of 18 enterprise clients as a front-facing benefits specialist.</p></article></div></div></section>
-
-<section class="section lightblue"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">05 / Capabilities</div><h2>Where I create value.</h2></div><p>Core professional strengths first; technology is a multiplier rather than a gimmick.</p></div><div class="cards"><article class="card reveal"><div class="tiny">01</div><h3>People Experience & HR Operations</h3><p>Employee support, critical case ownership, people processes and day-to-day operational execution.</p></article><article class="card reveal"><div class="tiny">02</div><h3>Client Handling & Stakeholders</h3><p>Front-facing communication, issue resolution, recurring reporting and enterprise stakeholder partnership.</p></article><article class="card reveal"><div class="tiny">03</div><h3>Process Improvement & Automation</h3><p>Find repetitive work, redesign the flow, remove manual steps and improve consistency.</p></article><article class="card reveal"><div class="tiny">04</div><h3>Excel, Data & Dashboards</h3><p>Operational reporting, dashboards and practical visibility for teams and decisions.</p></article><article class="card reveal"><div class="tiny">05</div><h3>Microsoft Tools</h3><p>Excel, PowerPoint, Teams, Outlook and the Microsoft ecosystem for reporting and operations.</p></article><article class="card reveal"><div class="tiny">06</div><h3>AI Literacy</h3><p>Curious and practical about AI and emerging technology as tools for productivity and workflow improvement.</p></article></div></div></section>
-
-<section id="recognition" class="section"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">06 / Recognition</div><h2>Awards that reinforce the impact.</h2></div><p>Your recognitions are a supporting layer of proof - evidence of performance across both Optum and Wipro.</p></div><div class="recognition"><div class="feature-award reveal"><div class="label">Featured recognition</div><h3>Diamond Foundational Award for Quality</h3><p>Publicly shared as recognition for quality, excellence and continued contribution at Optum.</p><div class="proof">Quality · Excellence · Ownership</div></div><div class="award-grid"><div class="award reveal"><b>Employee Excellence Award - July</b><span>Optum · Aug 2025 · 103% utilization · 4.35 CSAT</span></div><div class="award reveal"><b>Blaze Award</b><span>Wipro · Aug 2024 · Commitment and behaviour as a Client Specialist</span></div><div class="award reveal"><b>Dazzle Award</b><span>Wipro · Jul 2023 · Exceptional scorecard + on-floor supervisor responsibilities</span></div><div class="award reveal"><b>Illuminate Award</b><span>Wipro · Jul 2022 · Good performance</span></div><div class="award reveal"><b>Illuminate Award</b><span>Wipro · Apr 2022 · Additional performance recognition</span></div><div class="award reveal"><b>Recognition portfolio</b><span>Multiple awards and recognitions across your Wipro and Optum journey</span></div></div></div></div></section>
-
-<section id="learning" class="section lightblue"><div class="wrap"><div class="head reveal"><div><div class="eyebrow">07 / Learning</div><h2>Continuous learning, made visible.</h2></div><p>Selected credentials and learning milestones surfaced from your public LinkedIn certifications and course-completion posts.</p></div><div class="learn-grid"><article class="learn reveal"><div class="issuer">LinkedIn · Apr 2025</div><h3>Master Microsoft Excel</h3><p>Credential listed in LinkedIn certifications.</p></article><article class="learn reveal"><div class="issuer">LinkedIn · Mar 2025</div><h3>Using Microsoft Teams and Outlook Together: Maximizing Productivity</h3><p>Credential listed in LinkedIn certifications.</p></article><article class="learn reveal"><div class="issuer">Course completion</div><h3>Business Analysis Foundations</h3><p>Course by Greta Blash, shared as a completion post.</p></article><article class="learn reveal"><div class="issuer">Course completion</div><h3>Navigating Employee Relations as an HR Professional</h3><p>Madecraft / Nneka Craigwell, shared as a completion post.</p></article><article class="learn reveal"><div class="issuer">Course completion</div><h3>Excel Formulas and Functions Quick Tips</h3><p>Course by Jess Stratton, shared as a completion post.</p></article><article class="learn reveal"><div class="issuer">Course completion</div><h3>Tips to Build a Positive Mindset</h3><p>Course by Emily Anhalt, shared as a completion post.</p></article><article class="learn reveal"><div class="issuer">Training</div><h3>Basic Life Support (First Aid)</h3><p>Theory + practical training shared publicly after completion at Optum Gurugram.</p></article><article class="learn reveal"><div class="issuer">Academic</div><h3>Kurukshetra University</h3><p>2019–2021 · First Division (77.7%) · scholarship recipient throughout the program based on academic performance.</p></article></div><p class="note">These are presented as learning/credential cards rather than reproductions of certificate artwork. Credential details can be linked directly once their individual public credential URLs are available.</p></div></section>
-
-<section id="contact" class="section"><div class="wrap"><div class="contact reveal"><div class="eyebrow" style="color:#7fb5ff">08 / Let's Connect</div><h2>Have a people problem worth solving?</h2><p>For roles, collaborations or a conversation about People Experience, People Operations and smarter processes, reach out directly.</p><div class="contact-actions"><a class="btn primary" href="mailto:contact@badalkalra.com?subject=Let's%20Connect%20-%20Badal%20Kalra">Email Badal</a><a class="btn secondary" href="https://www.linkedin.com/in/badalkalra71" target="_blank" rel="noopener noreferrer">Open LinkedIn</a><a class="btn tertiary" href="./Badal-Kalra-Resume.pdf" download="Badal-Kalra-Resume.pdf">Download Resume</a></div></div><div class="footer"><span>© 2026 Badal Kalra</span><span>People Experience · People Operations · Process Improvement</span></div></div></section>
-<script>
-const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-</script>
-</body></html>
+  <script src="script.js"></script>
+</body>
+</html>
